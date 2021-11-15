@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos de remate</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            width: 450px;
+            margin: auto;
+        }
+        #galeria {
+            width: 400px;
+        }
+        nav ul {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+        }
+        nav ul li a img {
+            width: 100px;
+            opacity: 50%;
+            transition: 0.3s;
+            filter: grayscale(50%);
+        }
+        nav ul li a img:hover {
+            opacity: 100%;
+            margin-top: -5px;
+            filter: grayscale(0%);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+        }
+        nav ul li a img:active {
+            transform: scale(0.8);
+        }
+
+    </style>
+</head>
+<body>
+    <img id="galeria" src="/images/principal.jpg" alt="">
+    <p id="mitexto">
+      Últimas piezas a liquidación
+    </p>
+    <nav>
+    <ul>
+      <li><a onclick="cargarfoto(1,0)"><img src="/images/img1.jpg" alt="" max-width="400px"></a></li>
+      <li><a onclick="cargarfoto(2,1)"><img src="/images/img2.jpg" alt="" max-width="400px"></a></li>
+      <li><a onclick="cargarfoto(3,2)"><img src="/images/img3.jpg" alt="" max-width="400px"></a></li>
+      <li><a onclick='cargarfoto(4,3)'><img src='/images/img4.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(5,4)'><img src='/images/img5.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(6,5)'><img src='/images/img6.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(7,6)'><img src='/images/img7.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(8,7)'><img src='/images/img8.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(9,8)'><img src='/images/img9.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(10,9)'><img src='/images/img10.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(11,10)'><img src='/images/img11.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(12,11)'><img src='/images/img12.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(13,12)'><img src='/images/img13.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(14,13)'><img src='/images/img14.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(15,14)'><img src='/images/img15.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(16,15)'><img src='/images/img16.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(17,16)'><img src='/images/img17.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(18,17)'><img src='/images/img18.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(19,18)'><img src='/images/img19.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(20,19)'><img src='/images/img20.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(21,20)'><img src='/images/img21.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(22,21)'><img src='/images/img22.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(23,22)'><img src='/images/img23.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(24,23)'><img src='/images/img24.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(25,24)'><img src='/images/img25.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(26,25)'><img src='/images/img26.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(27,26)'><img src='/images/img27.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(28,27)'><img src='/images/img28.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(29,28)'><img src='/images/img29.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(30,29)'><img src='/images/img30.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(31,30)'><img src='/images/img31.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(32,31)'><img src='/images/img32.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(33,32)'><img src='/images/img33.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(34,33)'><img src='/images/img34.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(35,34)'><img src='/images/img35.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(36,35)'><img src='/images/img36.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(37,36)'><img src='/images/img37.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(38,37)'><img src='/images/img38.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(39,38)'><img src='/images/img39.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(40,39)'><img src='/images/img40.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(41,40)'><img src='/images/img41.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(42,41)'><img src='/images/img42.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(43,42)'><img src='/images/img43.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(44,43)'><img src='/images/img44.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(45,44)'><img src='/images/img45.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(46,45)'><img src='/images/img46.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(47,46)'><img src='/images/img47.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(48,47)'><img src='/images/img48.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(49,48)'><img src='/images/img49.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(50,49)'><img src='/images/img50.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(51,50)'><img src='/images/img51.jpg' max-width='400px'></a></li>
+      <li><a onclick='cargarfoto(54,51)'><img src='/images/img54.jpg' max-width='400px'></a></li>
+
+    </ul>
+    </nav>
+    <script>
+        var textos=[
+          "<b>Vibradores ultimas piezas $166.00 c/u<b><br> *en orden de aparición<br>GK10066-B	Big Shot pink<br>GK10070-D	Big Boy pink<br>GK10067-D	Head honcho carne",
+          "<b>Funda extensión real feel blister nacional<b><br>Con estimulador de clítoris $125",
+          "<b>Consolador Blister nacional c/u</b><br>Largo (color chocolate y café claro) $135<br> Cabezón (color negro)$135",
+          "<b>Consolador Blister nacional Perfet Jelly</b><br> Colores naranja y verde $135 c/u",
+          "<b>Esposas Fetish fantasy series</b><br>$129 c/u<br>3 existencias",
+          "<b>Ducha anal calexotics</b><br>color naranja $92c/u <br>2 existencias",
+          "<b>Ducha anal calexotics*Foto Repetida</b><br>color naranja $92c/u <br>2 existencias",
+          "<b>Dildo nacional varios</b><br>SA100-1 real feel suelto $120<br>SA100 nacional $89 <br>SA100-14 mini $59",
+          "<b>Dildo nacional varios *Foto con Medidas</b><br>SA100-1 real feel suelto $120<br>SA100 nacional $89 <br>SA100-14 mini $59",
+          "<b>Bolas anales blush Basic Beads</b><br>$88.50 c/u<br>6 existencias(4 moradas, 2 rosas)",
+          "<b>Retardin crema 15grs</b><br>$64 c/u<br>10 existencias",
+          "<b>Prolongel 20grs</b><br>$59 c/u<br>5 existencias",
+          "<b>XTIME spray retardante 30ml</b><br>$59 c/u <br>5 existencias",
+          "<b>Lubricante LovLub sobre 10grs</b><br>$12 c/u<br>14 chocolate y 15 cereza",
+          "<b>Bala vibradora calexotics s/blister</b><br>$86 c/u<br>2 clear, 2 smoke, 1 morada. 5 total",
+          "<b>Plug anal silicon con piedra roja</b><br>$60 c/u incluye bolsita<br>2 existencias",
+          "<b>Plug anal silicon con piedra roja *foto prod.repetido</b><br>$60 c/u incluye bolsita<br>2 existencias",
+          "<b>Mini plug anal morado</b><br>$28 c/u<br>1 existencia",
+          "<b>Anillos vibradores sencillos</b><br>$29 c/u<br>2 existencias",
+          "<b>Prolong-pocket spray</b><br>$42 c/u<br>5 existencias",
+          "<b>Powerman blister c/4 tabs.</b><br>$110.50 c/u<br>2 existencias",
+          "<b>Powerman blister c/4 tabs. **Repetido</b><br>$110.50 c/u<br>2 existencias",
+          "<b>Instant erection cream 0.5oz</b><br>$102 c/u<br>3 existencias",
+          "<b>Ibiza gold blister 1caps.</b><br>$75 c/u<br>18 existencias",
+          "<b>Anal xtasy</b><br>$69.50 c/u<br>15 existencias",
+          "<b>Classix Duo-Tone Balls</b><br>$109 c/u<br>2 existencias",
+          "<b>Slim Mini Vibe vibrador</b><br>$98 c/u<br>2 rosa, 2 azul, 2 morado",
+          "<b>vib shanes world morado</b><br>$95 c/u<br>1 existencia",
+          "<b>Glitters Dual Teaser pink</b><br>$265 c/u<br>1 existencia - color rosa",
+          "<b>Plugs anales blush</b><br>Slim Anal Plug morado  $65 (1 existencia)<br>Large Anal Plug $78 c/u(2 existencias)",
+          "<b>Funda extension silicon</b><br>Senso Extension calexotics $107<br>Funda silicon sleeve $75",
+          "<b>Lencería</b><br>Liguero (1 existencia) $102.50<br>Medias red con línea $43 (3 existencias)<br>Medias lisas $38.50 (3 existencias)",
+          "<b>Anal Jelly 60ml</b><br>$105 c/u<br>3 existencias(2 cereza, 1 fresa)",
+          "<b>Anal Jelly 60ml **foto Repetida</b><br>$105 c/u<br>3 existencias(2 cereza, 1 fresa)",
+          "<b>Yombina cubana negra</b><br>$115 c/u<br>10 existencias",
+          "<b>Paradise retardante blister 101caps</b><br>$128 c/u<br>2 existencias",
+          "<b>Anal instincts</b><br>$35 c/u<br>7 existencias(2 fresa, 2 mango, 1 cereza, 1 sandia, 1 menta)",
+          "<b>Afrodisíacos gotas</b><br>Yombina cubana $70(1)<br>Yombina china $110(1)<br>Mosca española mujer $120(1)",
+          "<b>Honey love 20ml</b><br>$33 c/u<br>1 existencia(chocolate)",
+          "<b>Sexwoman 10ml</b><br>$126 c/u<br>12 existencias",
+          "<b>Intimate Jelly estrechante 60ml</b><br>$99 c/u<br>5 existencias(2 cereza, 2 chocolate, 1 fresa)",
+          "<b>Extasis térmico 60ml</b><br>$99 c/u<br>2 existencias( 1 chocolate, 1 frutas)",
+          "<b>Butterfly black 60ml</b><br>$110 c/u<br>2 existencias(1 fresa, 1 cereza)",
+          "<b>Body sens aceite 60ml</b><br>$70 c/u<br>1 existencia(limón)",
+          "<b>Body sens aceite 60ml **Foto prod.repetido</b><br>$70 c/u<br>1 existencia(limón)",
+          "<b>Sensual dreams chico 35ml</b><br>$52.50 c/u<br>1 existencia(1 menta)",
+          "<b>Xtream Orgasm chico 35ml</b><br>$52.50 c/u<br>9 existencias(3 choco, 2 vainilla, 2 fresa, 2 cereza)",
+          "<b>Honey of passion chico</b><br>$64 c/u<br>4 existencias(2 fresa, 1 cereza, 1 frutas)",
+          "<b>Intimate Jelly chico 20ml</b><br>$46.50 c/u<br>3 existencias(2 cereza, 1 chocolate)",
+          "<b>Extasis chico</b><br>$23.50 c/u<br>9 existencias(2 durazno, 2 frutas, 1 cereza, 2 uva, 2 choco)",
+          "<b>Mosca española chicle</b><br>$115 c/u<br>5 existencias"
+        ]
+        function cargarfoto(img, txt){
+            document.getElementById("galeria").src="/images/img"+img+".jpg";
+            document.getElementById("mitexto").innerHTML=textos[txt];
+        }
+    </script>
+</body>
+</html>
